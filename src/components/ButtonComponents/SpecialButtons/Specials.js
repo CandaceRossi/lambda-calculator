@@ -21,4 +21,4 @@ const Specials = (specialState, setSpecialState) => {
         /div>
     );
 };
-export default Specials
+export default Specials;

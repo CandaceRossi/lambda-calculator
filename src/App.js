@@ -1,6 +1,11 @@
 import React from "react";
-import "./App.css";
-import { Numbers, Operators, Specials } from './data.js'
+import "./App.sass";
+import "./data.js";
+import { numbers } from "./data.js"
+import "./Numbers.js";
+import "./Operators.js";
+import "./Specials.js";
+
 // STEP 4 - import the button and display components
 // Don't forget to import any extra css/scss files you build into the correct component
 
@@ -20,6 +25,16 @@ function App() {
         Logo / >
         <
         div className = "App" > { /* STEP 4 - Render your components here and be sure to properly import/export all files */ } <
+        Operator / >
+        <
+        Number / >
+        <
+        Special / >
+        <
+        Logo / >
+        <
+        Display / >
+        <
         /div> < /
         div >
     );
