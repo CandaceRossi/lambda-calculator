@@ -1,15 +1,18 @@
 import React from "react";
 
-const OperatorButton = () => {
-    const [operators] = props;
+const OperatorButton = (props) => {
     console.log("this is more props", props)
-
-    return ( <
-        >
-        { /* Display a button element rendering the data being passed down from the parent container on props */ } <
-        button onClick = {
+const [opValue, setTopValue]= useState(operators)
+    return (
+        <div>
+            { /* Display a button element rendering the data being passed down from the parent container on props */ } <
+        {opValue.map (op => {
+            <OperatorButton key={}
+        })}
+        <button>{props.ops} onClick = {
             () => { operator(props) }
-        } { operators }
-        />
+        } { operators } <
+        button / >
     );
 };
+export default OperatorButtons
