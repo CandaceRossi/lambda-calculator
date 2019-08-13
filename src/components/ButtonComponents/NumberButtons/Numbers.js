@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import NumberButton from "./NumberButton";
 
 //import any components needed
 
@@ -13,7 +14,7 @@ const Numbers = () => {
        component matching the name on the provided file. Pass
        it any props needed by the child component*/}
       {calcNumbers.map(number => {
-        return <NumberButton />;
+        return <NumberButton key={number} numberValue={number} />;
       })}
     </div>
   );
