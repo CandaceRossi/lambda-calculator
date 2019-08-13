@@ -14,7 +14,13 @@ const Numbers = () => {
        component matching the name on the provided file. Pass
        it any props needed by the child component*/}
       {calcNumbers.map(number => {
-        return <NumberButton numberKey={number} numberValue={number} />;
+        return (
+          <NumberButton
+            className="numberButton"
+            numberKey={number}
+            numberValue={number}
+          />
+        );
       })}
     </div>
   );
